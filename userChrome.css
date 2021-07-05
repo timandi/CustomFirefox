@@ -1,0 +1,28 @@
+/* hides the native tabs */
+#tabbrowser-tabs { visibility: collapse !important; }
+
+/* shift toolbar to the right based on initial width */
+:root:not([inFullscreen]) toolbar#nav-bar {
+    z-index: 1 !important;
+    position: relative !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: calc(
+        18px * 2 + 60px
+    ) !important; 
+}
+
+#TabsToolbar .toolbar-items {
+    display: none !important;
+}
+
+.titlebar-buttonbox {
+    flex-direction: row-reverse;
+}
+
+#TabsToolbar.browser-toolbar {
+    display: inline-block !important;
+    position: absolute;
+    top: 18px !important;
+    left: 15px !important;
+}
