@@ -2,8 +2,8 @@
 
 My personal customization of Firefox using userChrome.css and TreeStyleTab extension.
 
+![vertical](https://github.com/timandi/CustomFirefox/blob/main/screenshot.png)
 
-![oof](https://github.com/timandi/CustomFirefox/screenshot.png)
 ## Setup
 
 ### Firefox CSS (Vertical Tabs)
