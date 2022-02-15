@@ -1,0 +1,46 @@
+/* Modify theme variables*/
+#root {
+  --tabs-height: 42px;
+  --nav-btn-width: 42px;
+  --tabs-indent: 20px;
+  --nav-btn-height: 42px;
+ 
+  --bg: #3b4251ff !important;
+  --tabs-activated-bg: #303039ff !important;
+  --tabs-bg-active: var(--tabs-activated-bg) !important;
+  --tabs-selected-bg: var(--tabs-activated-bg) !important;
+  --tabs-bg-hover: rgb(51, 51, 62) !important;
+  --nav-btn-width: 40px;
+  --nav-btn-height: 40px;
+ }
+ 
+ 
+ /* Distance the tabs*/
+ .Tab {
+ margin: 6px 0px 6px 6px;
+ }
+ 
+ /* Give tabs rounded corners */
+ .Tab:before {
+ border-radius: 8px;
+ }
+  
+ 
+ /* Adapt the favicons to the tab */
+ .Tab .fav {
+   margin-left: 15px;
+ }
+ .Tab .audio {
+   z-index: 21 !important;
+   transform: translateX(8px);
+ }
+ .Tab .close {
+   margin: 0 6px;
+ }
+ .Tab .t-box {
+   width: calc(100% - 50px);
+ }
+  
+  
+ 
+ 

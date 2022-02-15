@@ -1,28 +1,41 @@
-/* hides the native tabs */
-#tabbrowser-tabs { visibility: collapse !important; }
-
-/* shift toolbar to the right based on initial width */
-:root:not([inFullscreen]) toolbar#nav-bar {
-    z-index: 1 !important;
-    position: relative !important;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: calc(
-        18px * 2 + 60px
-    ) !important; 
-}
-
-#TabsToolbar .toolbar-items {
+/* Hide the sidebar header */
+#sidebar-header {
     display: none !important;
 }
 
-.titlebar-buttonbox {
-    flex-direction: row-reverse;
+/* Normal horizontal alignment */
+#main-window #toolbar-menubar {
+  height: 20px !important;
+  overflow: hidden;
+  transition: height .3s .3s !important;
+}
+ 
+/* Sidebery activated, therefore hide the toolbar */
+#main-window[titlepreface*="S"] #toolbar-menubar {
+  height: 0 !important;
+  transition: height .3s .3s !important;
 }
 
-#TabsToolbar.browser-toolbar {
-    display: inline-block !important;
-    position: absolute;
-    top: 18px !important;
+/* Collapse the browser-tab */
+#main-window[titlepreface*="S"] #tabbrowser-tabs {
+    visibility: collapse !important;
+}
+
+/* */
+#main-window[titlepreface*="S"] #TabsToolbar.browser-toolbar {
+   display: inline-block !important;
+    position: absolute !important;
+    top: 15px !important;
     left: 15px !important;
+     height: 45px !important;
+}
+
+/* */
+#main-window[titlepreface*="S"] #nav-bar-customization-target {
+ margin-left: 100px;
+}
+
+/* */
+#main-window[titlepreface*="S"] #urlbar-container {
+ margin-top: 4px;
 }

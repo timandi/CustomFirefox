@@ -1,8 +1,9 @@
-# Custom Firefox CSS 
+# Custom Firefox CSS
 
 My personal customization of Firefox using userChrome.css and TreeStyleTab extension.
 
-![vertical](https://github.com/timandi/CustomFirefox/blob/main/screenshot.png)
+![vertical](https://github.com/timandi/CustomFirefox/blob/main/vertical.png)
+![horizontal](https://github.com/timandi/CustomFirefox/blob/main/horizontal.png)
 
 ## Setup
 
@@ -14,10 +15,6 @@ My personal customization of Firefox using userChrome.css and TreeStyleTab exten
 4. Create a folder and name it **`chrome`** (with lowercase).
 5. Paste the `userChrome.css` into the folder.
 
+### Sidebery Extension
 
-### Tree Style Tab
-
-1. Install the [Tree Style Tab extension](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/).
-2. Go to extension preferences
-3. Set `Photon` as theme.
-4. Under `Advanced`, paste the `tabStyle.css` as the extra styles.
+[Read more](<https://github.com/mbnuqw/sidebery/wiki/Firefox-Styles-Snippets-(via-userChrome.css)>)
